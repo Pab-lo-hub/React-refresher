@@ -9,7 +9,7 @@ function App() {
   return (
     <div>
       <MainNavigation />
-      <switch>
+      <Switch>
         <Route path='/' exact>
           <AllMeetupsPage />
         </Route>
@@ -19,7 +19,7 @@ function App() {
         <Route path='/favorites'>
           <FavoritesPage />
         </Route>
-      </switch>
+      </Switch>
     </div>
   );
 }
