@@ -29,12 +29,15 @@ export function FavoritesContextProvider(props) {
     
     const context = {
         favorites: userFavorites,
-        totalFavorites: userFavorites.length    
+        totalFavorites: userFavorites.length,
+        addFavorite: addFavoriteHandler,
+        removeFavorite: removeFavoriteHandler,
+        itemIsFavorite: itemIsFavoriteHandler,    
     };
 
-    return <FavoritesContext.provider value={context}>
+    return <FavoritesContext.Provider value={context}>
         {props.children} 
-    </FavoritesContext.provider>
+    </FavoritesContext.Provider>
 }
 
 export default FavoritesContext;

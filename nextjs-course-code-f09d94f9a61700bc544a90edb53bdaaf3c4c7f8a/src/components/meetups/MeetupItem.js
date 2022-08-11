@@ -18,7 +18,7 @@ function MeetupItem(props) {
                 description: props.description,
                 image: props.image,
                 address: props.address
-            })
+            });
         }
     }
 
