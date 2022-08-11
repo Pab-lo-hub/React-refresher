@@ -1,6 +1,7 @@
 import { useState, useEffect } from 'react';
 import MeetupList from '../components/meetups/Meetuplist';
 
+
 function AllMeetups() {
     const [isLoading, setIsLoading] = useState(true);
     const [loadedMeetups, setLoadedMeetups] = useState([]);
